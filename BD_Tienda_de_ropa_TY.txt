@@ -1,0 +1,519 @@
+ 
+
+Use tienda_de_ropa_TY 
+
+//PRODUCTOS 
+
+Db.createCollection(“productos”); 
+
+db.productos.insertMany([ 
+
+  { id_producto: 1, nombre: "Camiseta deportiva", categoria: "Ropa", precio: 40000, talla: "M", stock: 30, marca: "Nike", color: "Rojo" }, 
+
+  { id_producto: 2, nombre: "Pantalón de mezclilla", categoria: "Ropa", precio: 95000, talla: "L", stock: 20, marca: "Levis", color: "Azul" }, 
+
+  { id_producto: 3, nombre: "Chaqueta de cuero", categoria: "Ropa", precio: 200000, talla: "M", stock: 10, marca: "Puma", color: "Negro" }, 
+
+  { id_producto: 4, nombre: "Zapatillas deportivas", categoria: "Calzado", precio: 120000, talla: "42", stock: 15, marca: "Adidas", color: "Blanco" }, 
+
+  { id_producto: 5, nombre: "Camiseta con logo", categoria: "Ropa", precio: 35000, talla: "M", stock: 25, marca: "Nike", color: "Blanco" }, 
+
+  { id_producto: 6, nombre: "Pantalón cargo", categoria: "Ropa", precio: 85000, talla: "L", stock: 22, marca: "Koaj", color: "Verde" }, 
+
+  { id_producto: 7, nombre: "Botines de mujer", categoria: "Calzado", precio: 150000, talla: "38", stock: 18, marca: "Puma", color: "Negro" }, 
+
+  { id_producto: 8, nombre: "Blusa de manga larga", categoria: "Ropa", precio: 50000, talla: "S", stock: 20, marca: "Zara", color: "Rojo" }, 
+
+  { id_producto: 9, nombre: "Sombrero de playa", categoria: "Accesorios", precio: 35000, talla: "Única", stock: 30, marca: "H&M", color: "Beige" }, 
+
+  { id_producto: 10, nombre: "Mochila deportiva", categoria: "Accesorios", precio: 45000, talla: "Única", stock: 25, marca: "Nike", color: "Azul" }, 
+
+  { id_producto: 11, nombre: "Falda de mezclilla", categoria: "Ropa", precio: 60000, talla: "M", stock: 28, marca: "Levis", color: "Azul" }, 
+
+  { id_producto: 12, nombre: "Zapatos de vestir", categoria: "Calzado", precio: 180000, talla: "41", stock: 15, marca: "Studio F", color: "Negro" }, 
+
+  { id_producto: 13, nombre: "Camiseta de manga corta", categoria: "Ropa", precio: 35000, talla: "L", stock: 25, marca: "H&M", color: "Gris" }, 
+
+  { id_producto: 14, nombre: "Bufanda de lana", categoria: "Accesorios", precio: 25000, talla: "Única", stock: 30, marca: "Zara", color: "Rojo" }, 
+
+  { id_producto: 15, nombre: "Pantalón de cuero", categoria: "Ropa", precio: 160000, talla: "S", stock: 12, marca: "Levis", color: "Negro" }, 
+
+  { id_producto: 16, nombre: "Chaqueta impermeable", categoria: "Ropa", precio: 150000, talla: "L", stock: 20, marca: "Adidas", color: "Azul" }, 
+
+  { id_producto: 17, nombre: "Cinturón de cuero", categoria: "Accesorios", precio: 35000, talla: "Única", stock: 40, marca: "Bershka", color: "Negro" }, 
+
+  { id_producto: 18, nombre: "Saco formal", categoria: "Ropa", precio: 180000, talla: "M", stock: 10, marca: "Puma", color: "Gris" }, 
+
+  { id_producto: 19, nombre: "Zapatillas de running", categoria: "Calzado", precio: 140000, talla: "43", stock: 12, marca: "Nike", color: "Blanco" }, 
+
+  { id_producto: 20, nombre: "Camiseta de rayas", categoria: "Ropa", precio: 40000, talla: "M", stock: 22, marca: "Koaj", color: "Azul" }, 
+
+  { id_producto: 21, nombre: "Correa Negro", categoria: "Calzado", precio: 131895, talla: "38", stock: 26, marca: "Puma", color: "Negro" }, 
+
+  { id_producto: 22, nombre: "Cinturón Beige", categoria: "Accesorios", precio: 117142, talla: "41", stock: 47, marca: "H&M", color: "Beige" }, 
+
+  { id_producto: 23, nombre: "Mochila Negro", categoria: "Ropa", precio: 89788, talla: "42", stock: 37, marca: "Bershka", color: "Negro" }, 
+
+  { id_producto: 24, nombre: "Falda Verde", categoria: "Ropa", precio: 30864, talla: "39", stock: 40, marca: "H&M", color: "Verde" }, 
+
+  { id_producto: 25, nombre: "Sombrero Blanco", categoria: "Ropa", precio: 167639, talla: "38", stock: 46, marca: "Nike", color: "Blanco" }, 
+
+  { id_producto: 26, nombre: "Top Azul", categoria: "Ropa", precio: 85320, talla: "M", stock: 15, marca: "Koaj", color: "Azul" }, 
+
+  { id_producto: 27, nombre: "Vestido Beige", categoria: "Ropa", precio: 117800, talla: "S", stock: 22, marca: "Zara", color: "Beige" }, 
+
+  { id_producto: 28, nombre: "Pijama Negra", categoria: "Ropa", precio: 63500, talla: "L", stock: 30, marca: "H&M", color: "Negro" }, 
+
+  { id_producto: 29, nombre: "Camiseta Roja", categoria: "Ropa", precio: 42900, talla: "M", stock: 27, marca: "Nike", color: "Rojo" }, 
+
+  { id_producto: 30, nombre: "Bermuda Gris", categoria: "Ropa", precio: 59000, talla: "XL", stock: 18, marca: "Puma", color: "Gris" }, 
+
+]); 
+
+ 
+
+db.productos.insertMany([  
+
+  
+
+  { id_producto: 31, nombre: "Zapatos Café", categoria: "Calzado", precio: 155000, talla: "42", stock: 14, marca: "Studio F", color: "Café" },  
+
+  
+
+  { id_producto: 32, nombre: "Sudadera Verde", categoria: "Ropa", precio: 72000, talla: "L", stock: 16, marca: "Levis", color: "Verde" },  
+
+  
+
+  { id_producto: 33, nombre: "Chaqueta Morado", categoria: "Ropa", precio: 165000, talla: "M", stock: 10, marca: "Adidas", color: "Morado" },  
+
+  
+
+  { id_producto: 34, nombre: "Gorra Amarillo", categoria: "Accesorios", precio: 35000, talla: "Única", stock: 25, marca: "Nike", color: "Amarillo" },  
+
+  
+
+  { id_producto: 35, nombre: "Camisa Azul", categoria: "Ropa", precio: 57000, talla: "M", stock: 20, marca: "Koaj", color: "Azul" },  
+
+  
+
+  { id_producto: 36, nombre: "Falda Roja", categoria: "Ropa", precio: 63000, talla: "S", stock: 19, marca: "Zara", color: "Rojo" },  
+
+  
+
+  { id_producto: 37, nombre: "Botas Negras", categoria: "Calzado", precio: 175000, talla: "40", stock: 12, marca: "Puma", color: "Negro" },  
+
+  
+
+  { id_producto: 38, nombre: "Cinturón Marrón", categoria: "Accesorios", precio: 29000, talla: "Única", stock: 40, marca: "H&M", color: "Café" },  
+
+  
+
+  { id_producto: 39, nombre: "Camiseta Gris", categoria: "Ropa", precio: 38000, talla: "L", stock: 23, marca: "Levis", color: "Gris" },  
+
+  
+
+  { id_producto: 40, nombre: "Blusa Blanca", categoria: "Ropa", precio: 52000, talla: "S", stock: 26, marca: "Studio F", color: "Blanco" },  
+
+  
+
+  { id_producto: 41, nombre: "Pantalón Azul", categoria: "Ropa", precio: 89000, talla: "M", stock: 21, marca: "Koaj", color: "Azul" },  
+
+  
+
+  { id_producto: 42, nombre: "Saco Negro", categoria: "Ropa", precio: 135000, talla: "L", stock: 14, marca: "Adidas", color: "Negro" },  
+
+  
+
+  { id_producto: 43, nombre: "Sombrero Gris", categoria: "Accesorios", precio: 47000, talla: "Única", stock: 33, marca: "Bershka", color: "Gris" },  
+
+  
+
+  { id_producto: 44, nombre: "Medias Blancas", categoria: "Accesorios", precio: 15000, talla: "Única", stock: 60, marca: "Nike", color: "Blanco" },  
+
+  
+
+  { id_producto: 45, nombre: "Pantalón Beige", categoria: "Ropa", precio: 79000, talla: "XL", stock: 24, marca: "Zara", color: "Beige" },  
+
+  
+
+  { id_producto: 46, nombre: "Sudadera Roja", categoria: "Ropa", precio: 67000, talla: "M", stock: 28, marca: "Puma", color: "Rojo" },  
+
+  
+
+  { id_producto: 47, nombre: "Chaqueta Azul", categoria: "Ropa", precio: 142000, talla: "L", stock: 16, marca: "Levis", color: "Azul" },  
+
+  
+
+  { id_producto: 48, nombre: "Zapatos Blancos", categoria: "Calzado", precio: 165000, talla: "41", stock: 13, marca: "Adidas", color: "Blanco" },  
+
+  
+
+  { id_producto: 49, nombre: "Bufanda Negra", categoria: "Accesorios", precio: 32000, talla: "Única", stock: 35, marca: "H&M", color: "Negro" },  
+
+  
+
+  { id_producto: 50, nombre: "Top Verde", categoria: "Ropa", precio: 46000, talla: "S", stock: 22, marca: "Studio F", color: "Verde" }, 
+
+  
+
+  { id_producto: 51, nombre: "Chaleco Acolchado", categoria: "Ropa", precio: 98000, talla: "M", stock: 20, marca: "Koaj", color: "Negro" },  
+
+  
+
+  { id_producto: 52, nombre: "Falda Larga", categoria: "Ropa", precio: 71000, talla: "S", stock: 25, marca: "Zara", color: "Rosado" },  
+
+  
+
+  { id_producto: 53, nombre: "Jeans Slim Fit", categoria: "Ropa", precio: 87000, talla: "L", stock: 18, marca: "Levis", color: "Azul" },  
+
+  
+
+  { id_producto: 54, nombre: "Tenis Running", categoria: "Calzado", precio: 140000, talla: "43", stock: 15, marca: "Nike", color: "Gris" },  
+
+  
+
+  { id_producto: 55, nombre: "Camisa Formal", categoria: "Ropa", precio: 65000, talla: "M", stock: 17, marca: "H&M", color: "Blanca" },  
+
+  
+
+  { id_producto: 56, nombre: "Cartera de Mano", categoria: "Accesorios", precio: 55000, talla: "Única", stock: 12, marca: "Studio F", color: "Negro" },  
+
+  
+
+  { id_producto: 57, nombre: "Pantaloneta", categoria: "Ropa", precio: 42000, talla: "M", stock: 21, marca: "Adidas", color: "Azul" },  
+
+  
+
+  { id_producto: 58, nombre: "Camisa de Cuadros", categoria: "Ropa", precio: 61000, talla: "L", stock: 26, marca: "Koaj", color: "Rojo" },  
+
+  
+
+  { id_producto: 59, nombre: "Chaqueta de Jean", categoria: "Ropa", precio: 132000, talla: "M", stock: 13, marca: "Levis", color: "Azul" },  
+
+  
+
+  { id_producto: 60, nombre: "Gorra Deportiva", categoria: "Accesorios", precio: 29000, talla: "Única", stock: 32, marca: "Puma", color: "Negro" } 
+
+  
+
+]); 
+
+ 
+
+db.productos.insertMany([  
+
+  
+
+  { id_producto: 61, nombre: "Zapatos de Tacón", categoria: "Calzado", precio: 145000, talla: "38", stock: 14, marca: "Studio F", color: "Beige" },  
+
+  
+
+  { id_producto: 62, nombre: "Falda Plisada", categoria: "Ropa", precio: 67000, talla: "S", stock: 18, marca: "Zara", color: "Gris" },  
+
+  
+
+  { id_producto: 63, nombre: "Camiseta Oversize", categoria: "Ropa", precio: 49000, talla: "XL", stock: 22, marca: "H&M", color: "Verde" },  
+
+  
+
+  { id_producto: 64, nombre: "Blusa Estampada", categoria: "Ropa", precio: 52000, talla: "M", stock: 27, marca: "Studio F", color: "Multicolor" },  
+
+  
+
+  { id_producto: 65, nombre: "Short de Mezclilla", categoria: "Ropa", precio: 47000, talla: "S", stock: 24, marca: "Koaj", color: "Azul" },  
+
+  
+
+  { id_producto: 66, nombre: "Camisa Manga Corta", categoria: "Ropa", precio: 53000, talla: "M", stock: 30, marca: "H&M", color: "Celeste" },  
+
+  
+
+  { id_producto: 67, nombre: "Parka de Invierno", categoria: "Ropa", precio: 180000, talla: "L", stock: 10, marca: "Levis", color: "Negro" },  
+
+  
+
+  { id_producto: 68, nombre: "Bufanda de Algodón", categoria: "Accesorios", precio: 26000, talla: "Única", stock: 35, marca: "Zara", color: "Rojo" },  
+
+  
+
+  { id_producto: 69, nombre: "Camiseta Negra Básica", categoria: "Ropa", precio: 30000, talla: "M", stock: 45, marca: "Nike", color: "Negro" },  
+
+  
+
+  { id_producto: 70, nombre: "Leggins Deportivos", categoria: "Ropa", precio: 68000, talla: "S", stock: 20, marca: "Puma", color: "Gris" },  
+
+  
+
+  { id_producto: 71, nombre: "Medias de Colores", categoria: "Accesorios", precio: 18000, talla: "Única", stock: 50, marca: "H&M", color: "Multicolor" },  
+
+  
+
+  { id_producto: 72, nombre: "Zapatillas Urbanas", categoria: "Calzado", precio: 130000, talla: "40", stock: 15, marca: "Adidas", color: "Negro" },  
+
+  
+
+  { id_producto: 73, nombre: "Bermuda de Jean", categoria: "Ropa", precio: 59000, talla: "M", stock: 18, marca: "Levis", color: "Azul" },  
+
+  
+
+  { id_producto: 74, nombre: "Chaqueta Acolchada", categoria: "Ropa", precio: 165000, talla: "L", stock: 12, marca: "Koaj", color: "Verde" },  
+
+  
+
+  { id_producto: 75, nombre: "Bolso de Hombro", categoria: "Accesorios", precio: 62000, talla: "Única", stock: 20, marca: "Studio F", color: "Negro" }, 
+
+  
+
+  { id_producto: 76, nombre: "Camiseta con estampado floral", categoria: "Ropa", precio: 45000, talla: "M", stock: 20, marca: "Zara", color: "Blanco" },  
+
+  
+
+  { id_producto: 77, nombre: "Jean rasgado", categoria: "Ropa", precio: 78000, talla: "L", stock: 18, marca: "Koaj", color: "Azul oscuro" },  
+
+  
+
+  { id_producto: 78, nombre: "Sudadera deportiva", categoria: "Ropa", precio: 90000, talla: "M", stock: 22, marca: "Nike", color: "Gris" },  
+
+  
+
+  { id_producto: 79, nombre: "Zapatos de cuero casuales", categoria: "Calzado", precio: 155000, talla: "42", stock: 14, marca: "Puma", color: "Marrón" },  
+
+  
+
+  { id_producto: 80, nombre: "Blusa sin mangas", categoria: "Ropa", precio: 38000, talla: "S", stock: 26, marca: "Studio F", color: "Celeste" },  
+
+  
+
+  { id_producto: 81, nombre: "Gorra con visera curva", categoria: "Accesorios", precio: 24000, talla: "Única", stock: 28, marca: "Adidas", color: "Blanco" },  
+
+  
+
+  { id_producto: 82, nombre: "Sandalias planas", categoria: "Calzado", precio: 49000, talla: "37", stock: 30, marca: "Zara", color: "Beige" },  
+
+  
+
+  { id_producto: 83, nombre: "Camiseta sin estampado", categoria: "Ropa", precio: 31000, talla: "M", stock: 35, marca: "H&M", color: "Negro" },  
+
+  
+
+  { id_producto: 84, nombre: "Pantalón de lino", categoria: "Ropa", precio: 80000, talla: "L", stock: 19, marca: "Koaj", color: "Blanco" },  
+
+  
+
+  { id_producto: 85, nombre: "Mochila urbana", categoria: "Accesorios", precio: 62000, talla: "Única", stock: 20, marca: "Nike", color: "Gris" },  
+
+  
+
+  { id_producto: 86, nombre: "Saco cuello tortuga", categoria: "Ropa", precio: 93000, talla: "M", stock: 12, marca: "Levis", color: "Negro" },  
+
+  
+
+  { id_producto: 87, nombre: "Top deportivo", categoria: "Ropa", precio: 40000, talla: "S", stock: 25, marca: "Adidas", color: "Fucsia" },  
+
+  
+
+  { id_producto: 88, nombre: "Zapatos oxford", categoria: "Calzado", precio: 165000, talla: "41", stock: 14, marca: "Studio F", color: "Negro" },  
+
+  
+
+  { id_producto: 89, nombre: "Gafas de sol redondas", categoria: "Accesorios", precio: 38000, talla: "Única", stock: 30, marca: "Zara", color: "Negro" },  
+
+  
+
+  { id_producto: 90, nombre: "Buzo con capucha", categoria: "Ropa", precio: 77000, talla: "L", stock: 15, marca: "Puma", color: "Gris oscuro" } 
+
+  
+
+]); 
+
+ 
+
+  { id_producto: 91, nombre: "Camiseta térmica", categoria: "Ropa", precio: 58000, talla: "M", stock: 18, marca: "Nike", color: "Azul" }, 
+
+  { id_producto: 92, nombre: "Chaqueta acolchada ligera", categoria: "Ropa", precio: 120000, talla: "M", stock: 10, marca: "Koaj", color: "Verde oliva" }, 
+
+  { id_producto: 93, nombre: "Pantalones jogger", categoria: "Ropa", precio: 69000, talla: "L", stock: 16, marca: "H&M", color: "Negro" }, 
+
+  { id_producto: 94, nombre: "Aretes de aro", categoria: "Accesorios", precio: 20000, talla: "Única", stock: 45, marca: "Studio F", color: "Dorado" }, 
+
+  { id_producto: 95, nombre: "Blazer casual", categoria: "Ropa", precio: 155000, talla: "M", stock: 8, marca: "Zara", color: "Gris" }, 
+
+  { id_producto: 96, nombre: "Camisa cuello mao", categoria: "Ropa", precio: 66000, talla: "L", stock: 19, marca: "Levis", color: "Azul claro" }, 
+
+  { id_producto: 97, nombre: "Medias deportivas", categoria: "Accesorios", precio: 15000, talla: "Única", stock: 50, marca: "Nike", color: "Blanco" }, 
+
+  { id_producto: 98, nombre: "Falda corta estampada", categoria: "Ropa", precio: 52000, talla: "S", stock: 23, marca: "Koaj", color: "Multicolor" }, 
+
+  { id_producto: 99, nombre: "Botas militares", categoria: "Calzado", precio: 170000, talla: "40", stock: 12, marca: "Puma", color: "Negro" }, 
+
+  { id_producto: 100, nombre: "Chaqueta de cuero", categoria: "Ropa", precio: 135000, talla: "XL", stock: 14, marca: "Levis", color: "Azul claro" } 
+
+]); 
+
+ 
+
+//CLIENTE 
+
+Db.createCollection(“cliente”); 
+
+db.cliente.insertMany([ 
+
+{ "id_cliente": 1, "nombre": "Carlos", "apellido": "Pérez", "email": "carlos.perez@gmail.com", "telefono": "3012345678", "fecha_de_compra": "2025-04-02" }, { "id_cliente": 2, "nombre": "Ana", "apellido": "Gómez", "email": "ana.gomez@gmail.com", "telefono": "3023456789", "fecha_de_compra": "2025-04-04" }, { "id_cliente": 3, "nombre": "Luis", "apellido": "Martínez", "email": "luis.martinez@gmail.com", "telefono": "3034567890", "fecha_de_compra": "2025-04-06" }, { "id_cliente": 4, "nombre": "Marta", "apellido": "López", "email": "marta.lopez@gmail.com", "telefono": "3045678901", "fecha_de_compra": "2025-04-10" }, { "id_cliente": 5, "nombre": "José", "apellido": "Ramírez", "email": "jose.ramirez@gmail.com", "telefono": "3056789012", "fecha_de_compra": "2025-04-12" }, { "id_cliente": 6, "nombre": "Lucía", "apellido": "Hernández", "email": "lucia.hernandez@gmail.com", "telefono": "3067890123", "fecha_de_compra": "2025-04-15" }, { "id_cliente": 7, "nombre": "Javier", "apellido": "Torres", "email": "javier.torres@gmail.com", "telefono": "3078901234", "fecha_de_compra": "2025-04-17" }, { "id_cliente": 8, "nombre": "María", "apellido": "García", "email": "maria.garcia@gmail.com", "telefono": "3089012345", "fecha_de_compra": "2025-04-19" }, { "id_cliente": 9, "nombre": "Juan", "apellido": "Fernández", "email": "juan.fernandez@gmail.com", "telefono": "3090123456", "fecha_de_compra": "2025-04-20" }, { "id_cliente": 10, "nombre": "Paula", "apellido": "Sánchez", "email": "paula.sanchez@gmail.com", "telefono": "3101234567", "fecha_de_compra": "2025-04-22" }, { "id_cliente": 11, "nombre": "Ricardo", "apellido": "Ramírez", "email": "ricardo.ramirez@gmail.com", "telefono": "3112345678", "fecha_de_compra": "2025-04-25" }, { "id_cliente": 12, "nombre": "Eva", "apellido": "Vázquez", "email": "eva.vazquez@gmail.com", "telefono": "3123456789", "fecha_de_compra": "2025-04-01" }, { "id_cliente": 13, "nombre": "Martín", "apellido": "Castro", "email": "martin.castro@gmail.com", "telefono": "3134567890", "fecha_de_compra": "2025-04-03" }, { "id_cliente": 14, "nombre": "Claudia", "apellido": "Díaz", "email": "claudia.diaz@gmail.com", "telefono": "3145678901", "fecha_de_compra": "2025-04-05" }, { "id_cliente": 15, "nombre": "Antonio", "apellido": "Pérez", "email": "antonio.perez@gmail.com", "telefono": "3156789012", "fecha_de_compra": "2025-04-07" }, { "id_cliente": 16, "nombre": "Patricia", "apellido": "Morales", "email": "patricia.morales@gmail.com", "telefono": "3167890123", "fecha_de_compra": "2025-04-09" }, { "id_cliente": 17, "nombre": "Felipe", "apellido": "González", "email": "felipe.gonzalez@gmail.com", "telefono": "3178901234", "fecha_de_compra": "2025-04-11" }, { "id_cliente": 18, "nombre": "Raquel", "apellido": "Jiménez", "email": "raquel.jimenez@gmail.com", "telefono": "3189012345", "fecha_de_compra": "2025-04-13" }, { "id_cliente": 19, "nombre": "Sergio", "apellido": "Ruiz", "email": "sergio.ruiz@gmail.com", "telefono": "3190123456", "fecha_de_compra": "2025-04-14" }, { "id_cliente": 20, "nombre": "Beatriz", "apellido": "Gómez", "email": "beatriz.gomez@gmail.com", "telefono": "3201234567", "fecha_de_compra": "2025-04-16" }, { "id_cliente": 21, "nombre": "Carlos", "apellido": "Mendoza", "email": "carlos.mendoza@gmail.com", "telefono": "3212345678", "fecha_de_compra": "2025-04-18" }, { "id_cliente": 22, "nombre": "Sandra", "apellido": "Moreno", "email": "sandra.moreno@gmail.com", "telefono": "3223456789", "fecha_de_compra": "2025-04-21" }, { "id_cliente": 23, "nombre": "Alejandro", "apellido": "Ramírez", "email": "alejandro.ramirez@gmail.com", "telefono": "3234567890", "fecha_de_compra": "2025-04-23" }, { "id_cliente": 24, "nombre": "María", "apellido": "Serrano", "email": "maria.serrano@gmail.com", "telefono": "3245678901", "fecha_de_compra": "2025-04-24" }, { "id_cliente": 25, "nombre": "David", "apellido": "Torres", "email": "david.torres@gmail.com", "telefono": "3256789012", "fecha_de_compra": "2025-04-26" }, { "id_cliente": 26, "nombre": "Carla", "apellido": "Vega", "email": "carla.vega@gmail.com", "telefono": "3267890123", "fecha_de_compra": "2025-04-27" }, { "id_cliente": 27, "nombre": "Ricardo", "apellido": "Martínez", "email": "ricardo.martinez@gmail.com", "telefono": "3278901234", "fecha_de_compra": "2025-04-28" }, { "id_cliente": 28, "nombre": "Alba", "apellido": "Paredes", "email": "alba.paredes@gmail.com", "telefono": "3289012345", "fecha_de_compra": "2025-04-29" }, { "id_cliente": 29, "nombre": "Oscar", "apellido": "Álvarez", "email": "oscar.alvarez@gmail.com", "telefono": "3290123456", "fecha_de_compra": "2025-04-30" }, { "id_cliente": 30, "nombre": "Inés", "apellido": "García", "email": "ines.garcia@gmail.com", "telefono": "3301234567", "fecha_de_compra": "2025-04-01" }, { "id_cliente": 31, "nombre": "José", "apellido": "Ríos", "email": "jose.rios@gmail.com", "telefono": "3312345678", "fecha_de_compra": "2025-04-02" }, { "id_cliente": 32, "nombre": "Patricia", "apellido": "Castillo", "email": "patricia.castillo@gmail.com", "telefono": "3323456789", "fecha_de_compra": "2025-04-04" }, { "id_cliente": 33, "nombre": "Luis", "apellido": "Gómez", "email": "luis.gomez@gmail.com", "telefono": "3334567890", "fecha_de_compra": "2025-04-05" }, { "id_cliente": 34, "nombre": "Cristina", "apellido": "López", "email": "cristina.lopez@gmail.com", "telefono": "3345678901", "fecha_de_compra": "2025-04-07" }, { "id_cliente": 35, "nombre": "José", "apellido": "Morales", "email": "jose.morales@gmail.com", "telefono": "3356789012", "fecha_de_compra": "2025-04-08" }, { "id_cliente": 36, "nombre": "Sara", "apellido": "Vázquez", "email": "sara.vazquez@gmail.com", "telefono": "3367890123", "fecha_de_compra": "2025-04-10" }, { "id_cliente": 37, "nombre": "Tomás", "apellido": "Fernández", "email": "tomas.fernandez@gmail.com", "telefono": "3378901234", "fecha_de_compra": "2025-04-11" }, { "id_cliente": 38, "nombre": "Miguel", "apellido": "Pérez", "email": "miguel.perez@gmail.com", "telefono": "3389012345", "fecha_de_compra": "2025-04-13" }, { "id_cliente": 39, "nombre": "Patricia", "apellido": "González", "email": "patricia.gonzalez@gmail.com", "telefono": "3390123456", "fecha_de_compra": "2025-04-15" }, { "id_cliente": 40, "nombre": "Raúl", "apellido": "Serrano", "email": "raul.serrano@gmail.com", "telefono": "3401234567", "fecha_de_compra": "2025-04-17" }, { "id_cliente": 41, "nombre": "Alicia", "apellido": "Sánchez", "email": "alicia.sanchez@gmail.com", "telefono": "3412345678", "fecha_de_compra": "2025-04-18" }, { "id_cliente": 42, "nombre": "Enrique", "apellido": "Vega", "email": "enrique.vega@gmail.com", "telefono": "3423456789", "fecha_de_compra": "2025-04-19" }, { "id_cliente": 43, "nombre": "Carolina", "apellido": "Moreno", "email": "carolina.moreno@gmail.com", "telefono": "3434567890", "fecha_de_compra": "2025-04-21" }, { "id_cliente": 44, "nombre": "Óscar", "apellido": "González", "email": "oscar.gonzalez@gmail.com", "telefono": "3445678901", "fecha_de_compra": "2025-04-22" }, { "id_cliente": 45, "nombre": "Verónica", "apellido": "Martínez", "email": "veronica.martinez@gmail.com", "telefono": "3456789012", "fecha_de_compra": "2025-04-24" }, { "id_cliente": 46, "nombre": "Mónica", "apellido": "Ramírez", "email": "monica.ramirez@gmail.com", "telefono": "3467890123", "fecha_de_compra": "2025-04-26" }, { "id_cliente": 47, "nombre": "Antonio", "apellido": "González", "email": "antonio.gonzalez@gmail.com", "telefono": "3478901234", "fecha_de_compra": "2025-04-28" }, { "id_cliente": 48, "nombre": "Susana", "apellido": "López", "email": "susana.lopez@gmail.com", "telefono": "3489012345", "fecha_de_compra": "2025-04-29" }, { "id_cliente": 49, "nombre": "Fernando", "apellido": "Vázquez", "email": "fernando.vazquez@gmail.com", "telefono": "3490123456", "fecha_de_compra": "2025-04-30" }, { "id_cliente": 50, "nombre": "Victoria", "apellido": "Ríos", "email": "victoria.rios@gmail.com", "telefono": "3501234567", "fecha_de_compra": "2025-04-01" } 
+
+]); 
+
+//EMPLEADO 
+
+Db.createCollection(“empleado”); 
+
+db.empleado.insertMany([ 
+
+  { id_empleado: 1, nombre: "Andrea", apellido: "Martínez", cargo: "Cajera", direccion: "Cra 8 #12-45", email: "andrea.martinez@ty.com", telefono: "3114567890" }, 
+
+  { id_empleado: 2, nombre: "Luis", apellido: "Castaño", cargo: "Vendedor", direccion: "Cl 10 #15-20", email: "luis.castano@ty.com", telefono: "3201234567" }, 
+
+  { id_empleado: 3, nombre: "Sofía", apellido: "Gutiérrez", cargo: "Aseo", direccion: "Cra 20 #30-55", email: "sofia.gutierrez@ty.com", telefono: "3109876543" }, 
+
+  { id_empleado: 4, nombre: "Carlos", apellido: "Ramírez", cargo: "Bodeguero", direccion: "Cl 5 #4-12", email: "carlos.ramirez@ty.com", telefono: "3134567890" }, 
+
+  { id_empleado: 5, nombre: "Tatiana", apellido: "López", cargo: "Supervisora", direccion: "Cra 7 #18-10", email: "tatiana.lopez@ty.com", telefono: "3009876543" }, 
+
+  { id_empleado: 6, nombre: "Jorge", apellido: "Herrera", cargo: "Seguridad", direccion: "Cl 3 #7-33", email: "jorge.herrera@ty.com", telefono: "3122345678" }, 
+
+  { id_empleado: 7, nombre: "Valeria", apellido: "Díaz", cargo: "Diseñadora", direccion: "Cra 12 #22-08", email: "valeria.diaz@ty.com", telefono: "3167890123" }, 
+
+  { id_empleado: 8, nombre: "Miguel", apellido: "Álvarez", cargo: "Administrador", direccion: "Cl 9 #16-77", email: "miguel.alvarez@ty.com", telefono: "3113456789" }, 
+
+  { id_empleado: 9, nombre: "Paola", apellido: "Reyes", cargo: "Vendedora", direccion: "Cra 11 #25-10", email: "paola.reyes@ty.com", telefono: "3198765432" }, 
+
+  { id_empleado: 10, nombre: "Camilo", apellido: "Morales", cargo: "Mensajero", direccion: "Cl 6 #10-21", email: "camilo.morales@ty.com", telefono: "3012345678" } 
+
+]) 
+
+ 
+
+ 
+
+//VENTA  
+
+Db.createCollection(“venta”); 
+
+db.venta.insertMany([  
+
+{ id_venta: 1, id_cliente: 1, id_empleado: 1, productos: [{ id_producto: 61, cantidad: 1, precio_unitario: 145000 }], total: 145000, fecha: new Date("2025-05-01") }, { id_venta: 2, id_cliente: 2, id_empleado: 2, productos: [{ id_producto: 62, cantidad: 1, precio_unitario: 67000 }], total: 67000, fecha: new Date("2025-05-02") }, { id_venta: 3, id_cliente: 3, id_empleado: 3, productos: [{ id_producto: 63, cantidad: 1, precio_unitario: 49000 }, { id_producto: 64, cantidad: 1, precio_unitario: 52000 }], total: 101000, fecha: new Date("2025-05-03") }, { id_venta: 4, id_cliente: 4, id_empleado: 4, productos: [{ id_producto: 65, cantidad: 1, precio_unitario: 47000 }], total: 47000, fecha: new Date("2025-05-04") }, { id_venta: 5, id_cliente: 5, id_empleado: 5, productos: [{ id_producto: 66, cantidad: 1, precio_unitario: 53000 }], total: 53000, fecha: new Date("2025-05-05") }, { id_venta: 6, id_cliente: 6, id_empleado: 6, productos: [{ id_producto: 67, cantidad: 1, precio_unitario: 180000 }], total: 180000, fecha: new Date("2025-05-06") }, { id_venta: 7, id_cliente: 7, id_empleado: 7, productos: [{ id_producto: 68, cantidad: 1, precio_unitario: 26000 }], total: 26000, fecha: new Date("2025-05-07") }, { id_venta: 8, id_cliente: 8, id_empleado: 8, productos: [{ id_producto: 69, cantidad: 1, precio_unitario: 30000 }], total: 30000, fecha: new Date("2025-05-08") }, { id_venta: 9, id_cliente: 9, id_empleado: 9, productos: [{ id_producto: 70, cantidad: 1, precio_unitario: 68000 }], total: 68000, fecha: new Date("2025-05-09") }, { id_venta: 10, id_cliente: 10, id_empleado: 10, productos: [{ id_producto: 71, cantidad: 1, precio_unitario: 18000 }], total: 18000, fecha: new Date("2025-05-10") }, { id_venta: 11, id_cliente: 11, id_empleado: 11, productos: [{ id_producto: 72, cantidad: 1, precio_unitario: 130000 }], total: 130000, fecha: new Date("2025-05-11") }, { id_venta: 12, id_cliente: 12, id_empleado: 12, productos: [{ id_producto: 73, cantidad: 1, precio_unitario: 59000 }], total: 59000, fecha: new Date("2025-05-12") }, { id_venta: 13, id_cliente: 13, id_empleado: 13, productos: [{ id_producto: 74, cantidad: 1, precio_unitario: 165000 }], total: 165000, fecha: new Date("2025-05-13") }, { id_venta: 14, id_cliente: 14, id_empleado: 14, productos: [{ id_producto: 75, cantidad: 1, precio_unitario: 62000 }], total: 62000, fecha: new Date("2025-05-14") }, { id_venta: 15, id_cliente: 15, id_empleado: 15, productos: [{ id_producto: 76, cantidad: 1, precio_unitario: 45000 }], total: 45000, fecha: new Date("2025-05-15") }, { id_venta: 16, id_cliente: 16, id_empleado: 16, productos: [{ id_producto: 77, cantidad: 1, precio_unitario: 78000 }], total: 78000, fecha: new Date("2025-05-16") }, { id_venta: 17, id_cliente: 17, id_empleado: 17, productos: [{ id_producto: 78, cantidad: 1, precio_unitario: 90000 }], total: 90000, fecha: new Date("2025-05-17") }, { id_venta: 18, id_cliente: 18, id_empleado: 18, productos: [{ id_producto: 79, cantidad: 1, precio_unitario: 155000 }], total: 155000, fecha: new Date("2025-05-18") }, { id_venta: 19, id_cliente: 19, id_empleado: 19, productos: [{ id_producto: 80, cantidad: 1, precio_unitario: 38000 }], total: 38000, fecha: new Date("2025-05-19") }, { id_venta: 20, id_cliente: 20, id_empleado: 20, productos: [{ id_producto: 81, cantidad: 1, precio_unitario: 24000 }], total: 24000, fecha: new Date("2025-05-20") }, { id_venta: 21, id_cliente: 1, id_empleado: 1, productos: [{ id_producto: 82, cantidad: 1, precio_unitario: 49000 }], total: 49000, fecha: new Date("2025-05-21") }, { id_venta: 22, id_cliente: 2, id_empleado: 2, productos: [{ id_producto: 83, cantidad: 1, precio_unitario: 31000 }], total: 31000, fecha: new Date("2025-05-22") }, { id_venta: 23, id_cliente: 3, id_empleado: 3, productos: [{ id_producto: 84, cantidad: 1, precio_unitario: 80000 }], total: 80000, fecha: new Date("2025-05-23") }, { id_venta: 24, id_cliente: 4, id_empleado: 4, productos: [{ id_producto: 85, cantidad: 1, precio_unitario: 62000 }], total: 62000, fecha: new Date("2025-05-24") }, { id_venta: 25, id_cliente: 5, id_empleado: 5, productos: [{ id_producto: 86, cantidad: 1, precio_unitario: 93000 }], total: 93000, fecha: new Date("2025-05-25") }, { id_venta: 26, id_cliente: 6, id_empleado: 6, productos: [{ id_producto: 87, cantidad: 1, precio_unitario: 40000 }], total: 40000, fecha: new Date("2025-05-26") }, { id_venta: 27, id_cliente: 7, id_empleado: 7, productos: [{ id_producto: 88, cantidad: 1, precio_unitario: 165000 }], total: 165000, fecha: new Date("2025-05-27") }, { id_venta: 28, id_cliente: 8, id_empleado: 8, productos: [{ id_producto: 89, cantidad: 1, precio_unitario: 38000 }], total: 38000, fecha: new Date("2025-05-28") }, { id_venta: 29, id_cliente: 9, id_empleado: 9, productos: [{ id_producto: 90, cantidad: 1, precio_unitario: 77000 }], total: 77000, fecha: new Date("2025-05-29") }, { id_venta: 30, id_cliente: 10, id_empleado: 10, productos: [{ id_producto: 91, cantidad: 1, precio_unitario: 58000 }], total: 58000, fecha: new Date("2025-05-30") } 
+
+ ]); 
+
+ 
+
+//INSERTAR venta 
+
+db.venta.insertOne({  
+
+id_venta: 31, id_cliente: 5, id_empleado: 2, productos: [ { id_producto: 70, cantidad: 1, precio_unitario: 68000 }, { id_producto: 76, cantidad: 2, precio_unitario: 45000 } ], total: 158000, fecha: new Date('2025-05-10')  
+
+}); 
+
+ 
+
+//Buscar venta creada 
+
+db.venta.find({id_venta:31}); 
+
+//Insertar Cliente 51 
+
+Db.cliente.insertOne({  
+
+id cliente: 51, nombre: “Karen Tatiana Gutiérrez Reyes”, dirección: “carrera 10# 20-30, Bogotá”), telefono:”3214456190”,email: Tatianagr289@gmail.com 
+
+}); 
+
+db.cliente.find({ id_cliente: 51 }); 
+
+ 
+
+//Selección  
+
+Mostrar las ventas realizada por el empleado 1 
+
+db.venta.find (id_empleado: 1 }); 
+
+//Actualización 
+
+db.productos.updateOne( 
+
+  { id_producto: 86 }, 
+
+  { $set: { stock: 30} } 
+
+); 
+
+ 
+
+//Eliminar Venta 
+
+db.cliente.deleteOne({ id_venta: 10 }); 
+
+ 
+
+//Consultas operadores y filtros   
+
+//Usamos $lt para encontrar productos donde el precio menor que 50,000. 
+
+db.productos.find({ precio: { $lt: 50000 } }); 
+
+ 
+
+//Usamos $gt para encontrar los accesorios donde el stock sea mayor a 20 
+
+db.productos.find({ categoria: "Accesorios", stock: { $gt: 20 } }); 
+
+ 
+
+//con $group, se agrupan los productos por su id_producto y se suman las cantidades vendidas. Después, se ordenan los productos por el número de ventas usando el operador $sort y se limita el resultado al producto más vendido con $limit. Finalmente, se emplea el operador $lookup para obtener información adicional del producto, como su nombre, y se proyectan solo los campos relevantes: id_producto, nombre y la cantidad de ventas. // 
+
+db.venta.aggregate([  
+
+{ $unwind: "$productos" }, { $group: { _id: "$productos.id_producto", ventas: { $sum: "$productos.cantidad" } } }, { $sort: { ventas: -1 } }, { $limit: 1 }, { $lookup: { from: "productos", localField: "_id", foreignField: "id_producto", as: "producto_info" } }, { $unwind: "$producto_info" }, { $project: { _id: 0, id_producto: "$_id", nombre: "$producto_info.nombre", ventas: 1 } } 
+
+ ]); 
+
+ 
+
+Contar 
+
+Contar el número de ventas realizadas 
+
+db.venta.aggregate([ 
+
+  { $count: "total_ventas" } 
+
+]); 
+
+Sumar  
+
+Se suma el total de todas las ventas 
+
+db.venta.aggregate([ 
+
+  {  
+
+    $group: { 
+
+      _id: null,                
+
+      total_ventas: { $sum: "$total" }  
+
+    } 
+
+  } 
+
+]); 
+
+Promedio  
+
+Se promedia el total de ventas por producto: 
+
+db.venta.aggregate([  
+
+{ $unwind: "$productos" }, { $group: { _id: "$productos.id_producto", promedio_ventas: { $avg: "$productos.cantidad" } } } ]); 
